@@ -1,6 +1,5 @@
 .modal-header,
-.modal-body,
-.modal-footer {
+.modal-body {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -27,12 +26,4 @@
 }
 .modal-body > .form-item.notes {
   width: 100%;
-}
-
-.modal-footer {
-  justify-content: flex-end;
-}
-
-.modal-footer > .save-contact {
-  margin: 0.5rem 1rem;
 }
