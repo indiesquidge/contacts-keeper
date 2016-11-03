@@ -12,6 +12,16 @@ class App extends Component {
     }
   }
 
+  componentWillMount() {
+    const localStorageRef = localStorage.getItem('contacts')
+    const contacts = JSON.parse(localStorageRef) || {}
+    this.setState({ contacts })
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    localStorage.setItem('contacts', JSON.stringify(nextState.contacts))
+  }
+
   addContact(contact) {
     const contacts = {...this.state.contacts}
     contacts[`contact-${Date.now()}`] = contact
