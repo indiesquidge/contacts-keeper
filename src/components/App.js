@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NewContactModal from './NewContactModal';
 import ContactTable from './ContactTable';
-import './App.css';
+import '../css/App.css';
 
 class App extends Component {
   constructor(props) {

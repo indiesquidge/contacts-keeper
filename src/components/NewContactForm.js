@@ -1,5 +1,5 @@
 import React from 'react'
-import './NewContactForm.css'
+import '../css/NewContactForm.css'
 
 const NewContactForm = ({ addContact, closeModal }) => {
   let contactForm, firstName, lastName, dob, phone, email, notes
