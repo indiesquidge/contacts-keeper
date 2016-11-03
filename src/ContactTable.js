@@ -1,18 +1,19 @@
 import React from 'react'
 import Contact from './Contact'
+import './ContactTable.css'
 
 class ContactTable extends React.Component {
   render() {
     return (
-      <table>
+      <table className="contact-table">
         <thead>
           <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Date of Birth</th>
-            <th>Phone</th>
-            <th>Email</th>
-            <th>Notes</th>
+            <th className="first-name">First Name</th>
+            <th className="last-name">Last Name</th>
+            <th className="dob">Date of Birth</th>
+            <th className="phone">Phone</th>
+            <th className="email">Email</th>
+            <th className="notes">Notes</th>
           </tr>
         </thead>
         <tbody>

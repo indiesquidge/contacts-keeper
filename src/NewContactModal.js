@@ -20,11 +20,13 @@ class NewContactModal extends Component {
   render() {
     return (
       <div className="contact-modal">
-        <button onClick={() => this.openModal()}>+ Contacts Keeper</button>
+        <button className="open-modal" onClick={() => this.openModal()}>
+          <span className="plus-icon">+</span> Contacts Keeper
+        </button>
         <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
           <div className="modal-header">
             <h3>Contacts Keeper</h3>
-            <span onClick={() => this.closeModal()}>x</span>
+            <span className="close" onClick={() => this.closeModal()}>x</span>
           </div>
           <div className="modal-body">
             <NewContactForm addContact={this.props.addContact} />

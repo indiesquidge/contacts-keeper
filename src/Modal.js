@@ -14,7 +14,9 @@ const Modal = (props) => {
     background: '#fff',
     display: 'flex',
     flexFlow: 'row wrap',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+    boxShadow: '0 0 3rem 0.5rem rgba(0, 0, 0, 0.3)',
+    animation: 'animatetop 0.5s'
   }
 
   const backdropStyle = {
@@ -24,7 +26,7 @@ const Modal = (props) => {
     top: '0px',
     left: '0px',
     zIndex: '9998',
-    background: 'rgba(0, 0, 0, 0.3)'
+    background: 'rgba(0, 0, 0, 0.5)'
   }
 
   const close = (e) => {

@@ -1,0 +1,44 @@
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contact-form {
+  justify-content: flex-start;
+}
+
+.contact-form > .form-item {
+  display: flex;
+  flex-flow: column wrap;
+  border: none;
+  padding: 1rem;
+  width: 45%;
+}
+
+.contact-form > .form-item > input,
+.contact-form > .form-item > textarea {
+  border: 2px solid #B3B3B3;
+  border-radius: 3px;
+  margin-top: 0.5rem;
+}
+
+.contact-form > .form-item > input {
+  height: 2rem;
+}
+
+.contact-form > .form-item.notes {
+  width: 100%;
+  border-bottom: 1px solid #B3B3B3;
+}
+
+.contact-form > .save-contact {
+  margin: 1rem 2rem 1rem auto;
+  width: 5rem;
+  height: 2rem;
+  border: none;
+  border-radius: 3px;
+  background-color: #676767;
+  color: white;
+  cursor: pointer;
+}

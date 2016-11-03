@@ -21,6 +21,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1 className="app-header">Contacts Keeper</h1>
         <NewContactModal addContact={this.addContact} />
         <ContactTable contacts={this.state.contacts} />
       </div>

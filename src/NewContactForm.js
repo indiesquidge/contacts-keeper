@@ -1,4 +1,5 @@
 import React from 'react'
+import './NewContactForm.css'
 
 const NewContactForm = ({ addContact }) => {
   let contactForm, firstName, lastName, dob, phone, email, notes
@@ -23,7 +24,7 @@ const NewContactForm = ({ addContact }) => {
     <form
       ref={input => contactForm = input}
       onSubmit={e => createContact(e)}
-      className="modal-body">
+      className="contact-form">
       <fieldset className="form-item first-name">
         <label htmlFor="new-first-name">First Name</label>
         <input ref={input => firstName = input} id="new-first-name" type="text"/>
