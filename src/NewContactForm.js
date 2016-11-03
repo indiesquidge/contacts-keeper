@@ -1,7 +1,7 @@
 import React from 'react'
 import './NewContactForm.css'
 
-const NewContactForm = ({ addContact }) => {
+const NewContactForm = ({ addContact, closeModal }) => {
   let contactForm, firstName, lastName, dob, phone, email, notes
 
   const createContact = (e) => {
@@ -18,6 +18,7 @@ const NewContactForm = ({ addContact }) => {
 
     contactForm.reset()
     addContact(contact)
+    closeModal()
   }
 
   return (
@@ -27,7 +28,7 @@ const NewContactForm = ({ addContact }) => {
       className="contact-form">
       <fieldset className="form-item first-name">
         <label htmlFor="new-first-name">First Name</label>
-        <input ref={input => firstName = input} id="new-first-name" type="text"/>
+        <input ref={input => firstName = input} id="new-first-name" type="text" required />
       </fieldset>
       <fieldset className="form-item last-name">
         <label htmlFor="new-last-name">Last Name</label>

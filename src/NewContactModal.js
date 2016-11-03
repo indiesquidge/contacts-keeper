@@ -29,7 +29,7 @@ class NewContactModal extends Component {
             <span className="close" onClick={() => this.closeModal()}>x</span>
           </div>
           <div className="modal-body">
-            <NewContactForm addContact={this.props.addContact} />
+            <NewContactForm addContact={this.props.addContact} closeModal={() => this.closeModal()} />
           </div>
         </Modal>
       </div>
